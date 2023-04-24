@@ -1,5 +1,5 @@
 
-Activity:
+# Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
@@ -7,24 +7,33 @@ Activity:
 # `ruby hashes_1.rb`
 
 foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
 # YOUR CODE HERE
 
+p foods.keys
+
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
 # YOUR CODE HERE
+
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
 # YOUR CODE HERE
 
+p foods[:grapes]
+
+
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
 # YOUR CODE HERE
 
+foods["bananas"] = 112
+p foods
 
 #-------------------
 # Part 2: Email
@@ -37,16 +46,29 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+email = {
+  sender: "Jaclyn",
+  receiver: "Wil",
+  subject: "Print these please",
+  date: "April 12, 2023",
+  attachments: true
+}
+
 # Write code that prints your email hash to the terminal.
 
+p email 
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
 # YOUR CODE HERE
 
+p email.keys
+
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
 # YOUR CODE HERE
+
+p email.values
 
 
 #-------------------
@@ -97,3 +119,32 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  {
+  sender: "Jaclyn",
+  receiver: "Wil",
+  subject: "Print these please",
+  date: "April 12, 2023",
+  attachments: true
+},
+{
+  sender: "Daniel",
+  receiver: "Blake",
+  subject: "Hashes questions",
+  date: "March 28, 2023",
+  attachments: false
+},
+{
+  sender: "Nick",
+  receiver: "Mitch",
+  subject: "Is Christmas a cookie holiday?",
+  date: "February 14, 2023",
+  attachments: true
+}
+]
+
+p emails 
+p emails[0]
+p emails[1]
+p emails[2]
