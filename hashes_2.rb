@@ -53,4 +53,11 @@ login_statuses = {
 #
 
 login_statuses.each do |name, logged_on|
+if logged_on == true
+  p "#{name} is logged on"
+end
+end
   
+
+
+ 
